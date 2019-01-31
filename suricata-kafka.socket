@@ -1,0 +1,13 @@
+# /etc/systemd/system/suricata-kafka.socket
+[Unit]
+Description=Foo Socket
+
+[Socket]
+ListenStream=/var/lib/suricata/eve.sock
+SocketUser=suricata
+SocketGroup=suricata
+SocketMode=0660
+#ListenDatagram=/tmp/foo.socket
+
+[Install]
+WantedBy=sockets.target
