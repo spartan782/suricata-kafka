@@ -1,0 +1,13 @@
+# /etc/systemd/system/foo.service
+[Unit]
+Description=Suricata to Kafka socket service
+After=network.target
+Requires=foo.socket
+
+[Service]
+ExecStart=/etc/suricata/suricata-kafka.py
+User=suricata
+Group=suricata
+Restart=on-failure
+KillSignal=SIGQUIT
+Type=simple
