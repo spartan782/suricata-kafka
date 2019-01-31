@@ -1,0 +1,6 @@
+---
+outputs:
+  - eve-log:
+    enabled: yes
+    filetype: unix_stream
+    filename: /var/lib/suricata/eve.sock
