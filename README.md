@@ -29,7 +29,7 @@ We also need to change suricata to output to the socket created by systemd. Here
 ...
 ```
 
-After getting everything in place we need to start the services, and its off to the races
+After getting everything in place we need to start the services, and its off to the races  
 `sudo systemctl start suricata-kafka`  
 `sudo systemctl start suricata`  
 
