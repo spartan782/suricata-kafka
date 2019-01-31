@@ -1,4 +1,4 @@
-# /etc/systemd/system/foo.service
+# /etc/systemd/system/suricata-kafka.service
 [Unit]
 Description=Suricata to Kafka socket service
 After=network.target
